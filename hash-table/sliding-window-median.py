@@ -26,7 +26,9 @@ class Solution:
             balance = 0
 
             # 处理窗口中移出的元素
-            if out_num <= -lo[0]:
+            # -lo[0] is smallest of the heap, 
+            # lo[0] has the largest  numeric "value"
+            if out_num <= -lo[0]: 
                 balance -= 1
             else:
                 balance += 1
